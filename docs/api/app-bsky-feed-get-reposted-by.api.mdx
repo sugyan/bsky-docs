@@ -1,0 +1,1820 @@
+---
+id: app-bsky-feed-get-reposted-by
+title: "app.bsky.feed.getRepostedBy"
+description: "*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*"
+sidebar_label: "app.bsky.feed.getRepostedBy"
+hide_title: true
+hide_table_of_contents: true
+api: eJztW2tvG7kV/SvEfIkdyCMn2CwKoyhgO9us0GxjOMqigNfAUjOUxPUMOSU5slVD/73nkvPSW97NdtFWSICMZi55H7w893Dm5jlyfGKji7uIF0U8sg/zeCxEGt33olTYxMjCSa2ii+j1cCotEyottFSO4brgxjE9Zm4q2FVWCoxlmCSTCacx7KN4kgn+vbwZWHbyczP/659PY3ZTjiDYzGfZ41QmU5Zq9coxI/5ZSiMYLzG3cvWECVdsJFjOU8FSPE9cBo0TLpV13ooiTFobc1kUP0rxSAZcsKlzhb3o94NMzAsZrCGz2GWrSKRevbCwicOG0pY8gx6v1Wmvp7TCvLLs5v3nHnuUbkqG6hxGJgxPZjKBKUY/zaWabJ27cgZTpWysDRtpzFM5wFXKlFZnxUqQ4tc/qZ/U66FmmeBGsVxTkEa6dJguy6COcQfNMBM+d4KbyQcYTwuolejBSOH9uCOp77V3FSrJ0vuTfqoT2+fpjKtEpGeTUiIR+ojXWYi5NvNT5u8Gcz4Ixzg0WJ8MRhR+PnKJs4mcCcXoThz1Il0I41dykCKhlvItngh364eK9GoOWSuS0kg3R2Y+R1fwVhhc3i+Ql8g7ngsnjPUPFX5gOkhjmKRURYQNzbGcwLdiLIyAT+zkcnj25XZwSvaSShidaJNiRJV4MM+ZUsCKZCpyHl08R25ekBbrDKL8q+ZGRJAi5Lg7I2MXi15jfCLT3cYPxsyWtLdE2mNjmZH3lI11uKHNFiKRY6TLDM9ou5yM5ux68P603qMdc+IlX8c8sy9w9newpYkNBaIbmEzm0q2GZr/lSHoxQcb0olwqmZd5dPEG1/ypuj4/J6fGvMyg9N350lKUxmrzcpVVsBaUoUbYQisrLD1/e35O/yzH8NPfMCnA0QEZ6GkHN/u/WBJ5XlehR79g/y1Zc1flvWn3Du0QQ1vNyWAASWxY1LV87Pno75L0q9OrQ7Tu+5Id7WNuDKcgSidyu8+f1G+FKfAoE+u+pHssTIOF1fBdkpUIhFNpi4zP/+7Xf30EsuajUBM3jS6+/eZ8sbIbdsq/ffctDeAz7viGeHWsqRaAW6sTSYViU5iWQ0GIazfkPKYhRJ0IteWphTHYszc8edgikfGRyETX4pHWKDnKr/6Uu32LiGKkHwcq0Tn5ubaKy483xEUo2qZ+HvxCKRQ+WDTMT4gNGznpMtGtI5xqU4xtbWOoAzCJyyac12T0i0eRu1Kl4kmkl2533kH8zMncJ1RiBI1+yZAZeMpSwJuwLuPGD8JxDORV1ScorRiFL/5JokvlQE2MyDyY2KksAkUhUVv6WWu5mH1SYDZTblmOxcUM4zJjFSqFCk7cpSUt8VoS5uVyrnbyxD+6mn9Emh6GYaEIehiGmtIASTYgwFdHM7Vt30tV7+M3KyiwaO3DQGTnp7GnIltVOf0g1NpiXjasySehL6JUCEBqFXjtxIgJcgQsL614E8n5akqx7Y8ynTygoipalrW8nhheTENeYwJSFFGV+60mNnwVRSDYVEXCIrtA4LkNIwiCQAUMI1gxld1whyjxHnP9zOLrW6wp2enCNGxtzXbaKhJxZhVI4pCTPOwzuJkv2Hy/W5qEbqrseVFxoIEDlNBr2ru7yc55DeL2JWV4C9TggMgo91RzuAC/0aUhtismPc/7mA8r0bnTeGVzW5PgTtjiM054nqBure3r2RL8dcsVxu/lpO8H72tq6Zcdx0nNKhwOBx8fjiWuWXGFLYCyklVDBlZfqwieBs+tpBMRO6kw9bRHocBZTpg2TA7Vp2NFOCUL2u/xhnXeglsrBNJf0Mm0R8S6Ytx04gxIv0rAYfkrzP+qa9Q+eyqApEXba8+QlE61cSwIMILVOl6YoRQUF5oj3OyuSAdb37z9E0GymGyoKRvOIf6UFmbDX84UISa56+fGUsD9RxwjfXHEmVzMpC4bzYuQivt9Q5EGHuSopDjJdwP3CMiosmw5tbq1XTwVL9GBVAnvQjp6MAW2k2UnCkd/rbAz6jU73a7Xyo3cqhEezZ1Ys+OznCjuSuOXKeWTs2SEdQO4oQilTeA6RAokLq5wIQ6PA8rRpRfcTm0OphK+0ond1bw9Ve9F3x+9RZ8dgvWrGN6BKq64lUnH/KUz0ap3W4jwBlpTix+p1ZFaHanVkVodqdWRWh2p1ZFa/V9Sq/ad4GHEJcivcLFdAx6UflR/DaPMAdA+bF+zvaKvYNVAAs2czXXJeGZ1dX8FzT3INe85Sdsakidb6tOiO+p/9sX78T36f/F79BqrUPpMUmbcnGwaOmvx4zQ6Eq0j0ToSrSPR+uOJ1ou/6B2GkEtUBhk0CKj2bt/wFVKyT3y2TMqOoHoE1SOoHkH1jwXVwxGShBd+wDebWqmueMpuQ4NC9JV6qoQxvgUMkbd8suE0FAR2EO6BQmrLtLXrO79Q6bB6sVo9Dz/vF62q9aaqxvc3675/UdShoY38l0j/885DHX2AiKhv9AdpbdUDtscVLwGjqQd0Ivx5jNMOj/pPpkj6+9pCzSw0ft63PaKfya9gW90p2qimtt+oatfzmBEEFv7lxFh7ySoNAeU3lK2Jztg/bm+uqYeWhpZ5zs0cAtdadVCzI46Tfhaanf2Hhk+FUBiLuyHiLOyseAM2YiPDi9DdjMWjVmb2/XB44/t325fp1JLr3683fdbUrtuxt1Yfsw9C0ScNlDsWfGX+Zb5vXUYq+ompWdi2LdRjo3MPx6SGrKy8hIXnMf7QotIa5NynUdUoubZQrF4pdrXWwPrc5uaxk/zYSf5bO8mrze3Ek+sXGZYt8DVPRwKa3EWEJhDdhSfAkKkmCLuLnp9H3IovJlss6Hbo+6UPj6m0fJR1On+35vXJbYWip+yQfvCNPjyIeXTRcuKSJPynusPN+B3as3eYGr4s7zY1SNat3IfINk3YrfA9/TCSpP1/BMDSCWwk4xcpjLpMElF0VawVQZqlKT4fvhtSfpSULi2nDPWhV190vj1zNe/M/edQapgv4X+JasvDl9PFPercvwEXn8cQ
+sidebar_class_name: "get api-method"
+info_path: docs/api/at-protocol-xrpc-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+
+<h1
+  className={"openapi__heading"}
+>
+  app.bsky.feed.getRepostedBy
+</h1>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/xrpc/app.bsky.feed.getRepostedBy"}
+>
+  
+</MethodEndpoint>
+
+
+
+*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*
+
+*To learn more about calling atproto API endpoints like this one, see the [API Hosts and Auth](/docs/advanced-guides/api-directory) guide.*
+
+Get a list of reposts for a given post.
+
+## Request
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"uri","in":"query","description":"Reference (AT-URI) of post record","required":true,"schema":{"type":"string","description":"Reference (AT-URI) of post record","format":"at-uri"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"cid","in":"query","description":"If supplied, filters to reposts of specific version (by CID) of the post record.","required":false,"schema":{"type":"string","description":"If supplied, filters to reposts of specific version (by CID) of the post record.","format":"cid"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"limit","in":"query","required":false,"schema":{"type":"integer","minimum":1,"maximum":100,"default":50}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"cursor","in":"query","required":false,"schema":{"type":"string"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs>
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"uri"}
+                        required={true}
+                        schemaName={"at-uri"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","format":"at-uri"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"cid"}
+                        required={false}
+                        schemaName={"cid"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","format":"cid"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"cursor"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                repostedBy
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object[]
+                              </span><span
+                                className={"openapi-schema__divider"}
+                              >
+                                
+                              </span><span
+                                className={"openapi-schema__required"}
+                              >
+                                required
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                              >
+                                Array [
+                              </div>
+                            </li><SchemaItem
+                              collapsible={false}
+                              name={"did"}
+                              required={true}
+                              schemaName={"did"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"did"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"handle"}
+                              required={true}
+                              schemaName={"handle"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"handle"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"displayName"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** `<= 640 characters`"}
+                              schema={{"type":"string","maxLength":640}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"description"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={"**Possible values:** `<= 2560 characters`"}
+                              schema={{"type":"string","maxLength":2560}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"avatar"}
+                              required={false}
+                              schemaName={"uri"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"uri"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      associated
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <SchemaItem
+                                    collapsible={false}
+                                    name={"lists"}
+                                    required={false}
+                                    schemaName={"integer"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"integer"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"feedgens"}
+                                    required={false}
+                                    schemaName={"integer"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"integer"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"starterPacks"}
+                                    required={false}
+                                    schemaName={"integer"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"integer"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"labeler"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            chat
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             object
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"allowIncoming"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** [`all`, `none`, `following`]"}
+                                          schema={{"type":"string","enum":["all","none","following"]}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </div>
+                                    </details>
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"indexedAt"}
+                              required={false}
+                              schemaName={"date-time"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date-time"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"createdAt"}
+                              required={false}
+                              schemaName={"date-time"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"date-time"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      viewer
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    Metadata about the requesting account's relationship with the subject account. Only has meaningful content for authed requests.
+                                    
+                                    
+                                  </div><SchemaItem
+                                    collapsible={false}
+                                    name={"muted"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            mutedByList
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             object
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"uri"}
+                                          required={true}
+                                          schemaName={"at-uri"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"at-uri"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"cid"}
+                                          required={true}
+                                          schemaName={"cid"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"cid"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"name"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** `non-empty` and `<= 64 characters`"}
+                                          schema={{"type":"string","minLength":1,"maxLength":64}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <strong>
+                                                purpose
+                                              </strong><span
+                                                style={{"opacity":"0.6"}}
+                                              >
+                                                 object
+                                              </span><strong
+                                                style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}
+                                              >
+                                                 required
+                                              </strong>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              
+                                            </div><div>
+                                              <span
+                                                className={"badge badge--info"}
+                                              >
+                                                oneOf
+                                              </span><SchemaTabs>
+                                                <TabItem
+                                                  label={"app.bsky.graph.defs.modlist"}
+                                                  value={"0-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem><TabItem
+                                                  label={"app.bsky.graph.defs.curatelist"}
+                                                  value={"1-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem><TabItem
+                                                  label={"app.bsky.graph.defs.referencelist"}
+                                                  value={"2-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem>
+                                              </SchemaTabs>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"avatar"}
+                                          required={false}
+                                          schemaName={"uri"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"uri"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"listItemCount"}
+                                          required={false}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer","minimum":0}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <span
+                                                className={"openapi-schema__container"}
+                                              >
+                                                <strong
+                                                  className={"openapi-schema__property"}
+                                                >
+                                                  labels
+                                                </strong><span
+                                                  className={"openapi-schema__name"}
+                                                >
+                                                   object[]
+                                                </span>
+                                              </span>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              <li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                                >
+                                                  Array [
+                                                </div>
+                                              </li><SchemaItem
+                                                collapsible={false}
+                                                name={"ver"}
+                                                required={false}
+                                                schemaName={"integer"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"integer"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"src"}
+                                                required={true}
+                                                schemaName={"did"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"DID of the actor who created this label.","format":"did"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"uri"}
+                                                required={true}
+                                                schemaName={"uri"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"AT URI of the record, repository (account), or other resource that this label applies to.","format":"uri"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"cid"}
+                                                required={false}
+                                                schemaName={"cid"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Optionally, CID specifying the specific version of 'uri' resource this label applies to.","format":"cid"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"val"}
+                                                required={true}
+                                                schemaName={"string"}
+                                                qualifierMessage={"**Possible values:** `<= 128 characters`"}
+                                                schema={{"type":"string","description":"The short string name of the value or type of this label.","maxLength":128}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"neg"}
+                                                required={false}
+                                                schemaName={"boolean"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"boolean","description":"If true, this is a negation label, overwriting a previous label."}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"cts"}
+                                                required={true}
+                                                schemaName={"date-time"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Timestamp when this label was created.","format":"date-time"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"exp"}
+                                                required={false}
+                                                schemaName={"date-time"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Timestamp at which this label expires (no longer applies).","format":"date-time"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"sig"}
+                                                required={false}
+                                                schemaName={"byte"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"byte","description":"Signature of dag-cbor encoded label."}}
+                                              >
+                                                
+                                              </SchemaItem><li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                                >
+                                                  ]
+                                                </div>
+                                              </li>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <span
+                                                className={"openapi-schema__container"}
+                                              >
+                                                <strong
+                                                  className={"openapi-schema__property"}
+                                                >
+                                                  viewer
+                                                </strong><span
+                                                  className={"openapi-schema__name"}
+                                                >
+                                                   object
+                                                </span>
+                                              </span>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              <SchemaItem
+                                                collapsible={false}
+                                                name={"muted"}
+                                                required={false}
+                                                schemaName={"boolean"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"boolean"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"blocked"}
+                                                required={false}
+                                                schemaName={"at-uri"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"at-uri"}}
+                                              >
+                                                
+                                              </SchemaItem>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"indexedAt"}
+                                          required={false}
+                                          schemaName={"date-time"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"date-time"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </div>
+                                    </details>
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"blockedBy"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"blocking"}
+                                    required={false}
+                                    schemaName={"at-uri"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","format":"at-uri"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            blockingByList
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             object
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <SchemaItem
+                                          collapsible={false}
+                                          name={"uri"}
+                                          required={true}
+                                          schemaName={"at-uri"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"at-uri"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"cid"}
+                                          required={true}
+                                          schemaName={"cid"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"cid"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"name"}
+                                          required={true}
+                                          schemaName={"string"}
+                                          qualifierMessage={"**Possible values:** `non-empty` and `<= 64 characters`"}
+                                          schema={{"type":"string","minLength":1,"maxLength":64}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <strong>
+                                                purpose
+                                              </strong><span
+                                                style={{"opacity":"0.6"}}
+                                              >
+                                                 object
+                                              </span><strong
+                                                style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}
+                                              >
+                                                 required
+                                              </strong>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              
+                                            </div><div>
+                                              <span
+                                                className={"badge badge--info"}
+                                              >
+                                                oneOf
+                                              </span><SchemaTabs>
+                                                <TabItem
+                                                  label={"app.bsky.graph.defs.modlist"}
+                                                  value={"0-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem><TabItem
+                                                  label={"app.bsky.graph.defs.curatelist"}
+                                                  value={"1-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem><TabItem
+                                                  label={"app.bsky.graph.defs.referencelist"}
+                                                  value={"2-item-properties"}
+                                                >
+                                                  <div
+                                                    style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
+                                                  >
+                                                    
+                                                    
+                                                    string
+                                                    
+                                                    
+                                                  </div>
+                                                </TabItem>
+                                              </SchemaTabs>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"avatar"}
+                                          required={false}
+                                          schemaName={"uri"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"uri"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"listItemCount"}
+                                          required={false}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer","minimum":0}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <span
+                                                className={"openapi-schema__container"}
+                                              >
+                                                <strong
+                                                  className={"openapi-schema__property"}
+                                                >
+                                                  labels
+                                                </strong><span
+                                                  className={"openapi-schema__name"}
+                                                >
+                                                   object[]
+                                                </span>
+                                              </span>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              <li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                                >
+                                                  Array [
+                                                </div>
+                                              </li><SchemaItem
+                                                collapsible={false}
+                                                name={"ver"}
+                                                required={false}
+                                                schemaName={"integer"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"integer"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"src"}
+                                                required={true}
+                                                schemaName={"did"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"DID of the actor who created this label.","format":"did"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"uri"}
+                                                required={true}
+                                                schemaName={"uri"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"AT URI of the record, repository (account), or other resource that this label applies to.","format":"uri"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"cid"}
+                                                required={false}
+                                                schemaName={"cid"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Optionally, CID specifying the specific version of 'uri' resource this label applies to.","format":"cid"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"val"}
+                                                required={true}
+                                                schemaName={"string"}
+                                                qualifierMessage={"**Possible values:** `<= 128 characters`"}
+                                                schema={{"type":"string","description":"The short string name of the value or type of this label.","maxLength":128}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"neg"}
+                                                required={false}
+                                                schemaName={"boolean"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"boolean","description":"If true, this is a negation label, overwriting a previous label."}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"cts"}
+                                                required={true}
+                                                schemaName={"date-time"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Timestamp when this label was created.","format":"date-time"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"exp"}
+                                                required={false}
+                                                schemaName={"date-time"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","description":"Timestamp at which this label expires (no longer applies).","format":"date-time"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"sig"}
+                                                required={false}
+                                                schemaName={"byte"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"byte","description":"Signature of dag-cbor encoded label."}}
+                                              >
+                                                
+                                              </SchemaItem><li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                                >
+                                                  ]
+                                                </div>
+                                              </li>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <span
+                                                className={"openapi-schema__container"}
+                                              >
+                                                <strong
+                                                  className={"openapi-schema__property"}
+                                                >
+                                                  viewer
+                                                </strong><span
+                                                  className={"openapi-schema__name"}
+                                                >
+                                                   object
+                                                </span>
+                                              </span>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              <SchemaItem
+                                                collapsible={false}
+                                                name={"muted"}
+                                                required={false}
+                                                schemaName={"boolean"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"boolean"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"blocked"}
+                                                required={false}
+                                                schemaName={"at-uri"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"at-uri"}}
+                                              >
+                                                
+                                              </SchemaItem>
+                                            </div>
+                                          </details>
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"indexedAt"}
+                                          required={false}
+                                          schemaName={"date-time"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"string","format":"date-time"}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </div>
+                                    </details>
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"following"}
+                                    required={false}
+                                    schemaName={"at-uri"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","format":"at-uri"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"followedBy"}
+                                    required={false}
+                                    schemaName={"at-uri"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","format":"at-uri"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            knownFollowers
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             object
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <div
+                                          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                        >
+                                          
+                                          
+                                          The subject's followers whom you also follow
+                                          
+                                          
+                                        </div><SchemaItem
+                                          collapsible={false}
+                                          name={"count"}
+                                          required={true}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer"}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={true}
+                                          className={"schemaItem"}
+                                        >
+                                          <details
+                                            style={{}}
+                                            className={"openapi-markdown__details"}
+                                          >
+                                            <summary
+                                              style={{}}
+                                            >
+                                              <span
+                                                className={"openapi-schema__container"}
+                                              >
+                                                <strong
+                                                  className={"openapi-schema__property"}
+                                                >
+                                                  followers
+                                                </strong><span
+                                                  className={"openapi-schema__name"}
+                                                >
+                                                   object[]
+                                                </span><span
+                                                  className={"openapi-schema__divider"}
+                                                >
+                                                  
+                                                </span><span
+                                                  className={"openapi-schema__required"}
+                                                >
+                                                  required
+                                                </span>
+                                              </span>
+                                            </summary><div
+                                              style={{"marginLeft":"1rem"}}
+                                            >
+                                              <div
+                                                style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                              >
+                                                
+                                                
+                                                **Possible values:** `&lt; 5`
+                                                
+                                                
+                                              </div><li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                                >
+                                                  Array [
+                                                </div>
+                                              </li><SchemaItem
+                                                collapsible={false}
+                                                name={"did"}
+                                                required={true}
+                                                schemaName={"did"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"did"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"handle"}
+                                                required={true}
+                                                schemaName={"handle"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"handle"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"displayName"}
+                                                required={false}
+                                                schemaName={"string"}
+                                                qualifierMessage={"**Possible values:** `<= 640 characters`"}
+                                                schema={{"type":"string","maxLength":640}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"avatar"}
+                                                required={false}
+                                                schemaName={"uri"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"uri"}}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={true}
+                                                className={"schemaItem"}
+                                              >
+                                                <details
+                                                  style={{}}
+                                                  className={"openapi-markdown__details"}
+                                                >
+                                                  <summary
+                                                    style={{}}
+                                                  >
+                                                    <span
+                                                      className={"openapi-schema__container"}
+                                                    >
+                                                      <strong
+                                                        className={"openapi-schema__property"}
+                                                      >
+                                                        associated
+                                                      </strong><span
+                                                        className={"openapi-schema__name"}
+                                                      >
+                                                         object
+                                                      </span>
+                                                    </span>
+                                                  </summary><div
+                                                    style={{"marginLeft":"1rem"}}
+                                                  >
+                                                    <SchemaItem
+                                                      collapsible={false}
+                                                      name={"lists"}
+                                                      required={false}
+                                                      schemaName={"integer"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"integer"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"feedgens"}
+                                                      required={false}
+                                                      schemaName={"integer"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"integer"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"starterPacks"}
+                                                      required={false}
+                                                      schemaName={"integer"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"integer"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"labeler"}
+                                                      required={false}
+                                                      schemaName={"boolean"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"boolean"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={true}
+                                                      className={"schemaItem"}
+                                                    >
+                                                      <details
+                                                        style={{}}
+                                                        className={"openapi-markdown__details"}
+                                                      >
+                                                        <summary
+                                                          style={{}}
+                                                        >
+                                                          <span
+                                                            className={"openapi-schema__container"}
+                                                          >
+                                                            <strong
+                                                              className={"openapi-schema__property"}
+                                                            >
+                                                              chat
+                                                            </strong><span
+                                                              className={"openapi-schema__name"}
+                                                            >
+                                                               object
+                                                            </span>
+                                                          </span>
+                                                        </summary><div
+                                                          style={{"marginLeft":"1rem"}}
+                                                        >
+                                                          <SchemaItem
+                                                            collapsible={false}
+                                                            name={"allowIncoming"}
+                                                            required={true}
+                                                            schemaName={"string"}
+                                                            qualifierMessage={"**Possible values:** [`all`, `none`, `following`]"}
+                                                            schema={{"type":"string","enum":["all","none","following"]}}
+                                                          >
+                                                            
+                                                          </SchemaItem>
+                                                        </div>
+                                                      </details>
+                                                    </SchemaItem>
+                                                  </div>
+                                                </details>
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"viewer"}
+                                                required={false}
+                                                schemaName={""}
+                                                qualifierMessage={undefined}
+                                                schema={"circular(app.bsky.actor.defs.viewerState)"}
+                                              >
+                                                
+                                              </SchemaItem><SchemaItem
+                                                collapsible={true}
+                                                className={"schemaItem"}
+                                              >
+                                                <details
+                                                  style={{}}
+                                                  className={"openapi-markdown__details"}
+                                                >
+                                                  <summary
+                                                    style={{}}
+                                                  >
+                                                    <span
+                                                      className={"openapi-schema__container"}
+                                                    >
+                                                      <strong
+                                                        className={"openapi-schema__property"}
+                                                      >
+                                                        labels
+                                                      </strong><span
+                                                        className={"openapi-schema__name"}
+                                                      >
+                                                         object[]
+                                                      </span>
+                                                    </span>
+                                                  </summary><div
+                                                    style={{"marginLeft":"1rem"}}
+                                                  >
+                                                    <li>
+                                                      <div
+                                                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                                      >
+                                                        Array [
+                                                      </div>
+                                                    </li><SchemaItem
+                                                      collapsible={false}
+                                                      name={"ver"}
+                                                      required={false}
+                                                      schemaName={"integer"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"integer"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"src"}
+                                                      required={true}
+                                                      schemaName={"did"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","description":"DID of the actor who created this label.","format":"did"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"uri"}
+                                                      required={true}
+                                                      schemaName={"uri"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","description":"AT URI of the record, repository (account), or other resource that this label applies to.","format":"uri"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"cid"}
+                                                      required={false}
+                                                      schemaName={"cid"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","description":"Optionally, CID specifying the specific version of 'uri' resource this label applies to.","format":"cid"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"val"}
+                                                      required={true}
+                                                      schemaName={"string"}
+                                                      qualifierMessage={"**Possible values:** `<= 128 characters`"}
+                                                      schema={{"type":"string","description":"The short string name of the value or type of this label.","maxLength":128}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"neg"}
+                                                      required={false}
+                                                      schemaName={"boolean"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"boolean","description":"If true, this is a negation label, overwriting a previous label."}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"cts"}
+                                                      required={true}
+                                                      schemaName={"date-time"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","description":"Timestamp when this label was created.","format":"date-time"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"exp"}
+                                                      required={false}
+                                                      schemaName={"date-time"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","description":"Timestamp at which this label expires (no longer applies).","format":"date-time"}}
+                                                    >
+                                                      
+                                                    </SchemaItem><SchemaItem
+                                                      collapsible={false}
+                                                      name={"sig"}
+                                                      required={false}
+                                                      schemaName={"byte"}
+                                                      qualifierMessage={undefined}
+                                                      schema={{"type":"string","format":"byte","description":"Signature of dag-cbor encoded label."}}
+                                                    >
+                                                      
+                                                    </SchemaItem><li>
+                                                      <div
+                                                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                                      >
+                                                        ]
+                                                      </div>
+                                                    </li>
+                                                  </div>
+                                                </details>
+                                              </SchemaItem><SchemaItem
+                                                collapsible={false}
+                                                name={"createdAt"}
+                                                required={false}
+                                                schemaName={"date-time"}
+                                                qualifierMessage={undefined}
+                                                schema={{"type":"string","format":"date-time"}}
+                                              >
+                                                
+                                              </SchemaItem><li>
+                                                <div
+                                                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                                >
+                                                  ]
+                                                </div>
+                                              </li>
+                                            </div>
+                                          </details>
+                                        </SchemaItem>
+                                      </div>
+                                    </details>
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      labels
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object[]
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                                    >
+                                      Array [
+                                    </div>
+                                  </li><SchemaItem
+                                    collapsible={false}
+                                    name={"ver"}
+                                    required={false}
+                                    schemaName={"integer"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"integer"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"src"}
+                                    required={true}
+                                    schemaName={"did"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"DID of the actor who created this label.","format":"did"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"uri"}
+                                    required={true}
+                                    schemaName={"uri"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"AT URI of the record, repository (account), or other resource that this label applies to.","format":"uri"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"cid"}
+                                    required={false}
+                                    schemaName={"cid"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Optionally, CID specifying the specific version of 'uri' resource this label applies to.","format":"cid"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"val"}
+                                    required={true}
+                                    schemaName={"string"}
+                                    qualifierMessage={"**Possible values:** `<= 128 characters`"}
+                                    schema={{"type":"string","description":"The short string name of the value or type of this label.","maxLength":128}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"neg"}
+                                    required={false}
+                                    schemaName={"boolean"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"boolean","description":"If true, this is a negation label, overwriting a previous label."}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"cts"}
+                                    required={true}
+                                    schemaName={"date-time"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Timestamp when this label was created.","format":"date-time"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"exp"}
+                                    required={false}
+                                    schemaName={"date-time"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","description":"Timestamp at which this label expires (no longer applies).","format":"date-time"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"sig"}
+                                    required={false}
+                                    schemaName={"byte"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","format":"byte","description":"Signature of dag-cbor encoded label."}}
+                                  >
+                                    
+                                  </SchemaItem><li>
+                                    <div
+                                      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                                    >
+                                      ]
+                                    </div>
+                                  </li>
+                                </div>
+                              </details>
+                            </SchemaItem><li>
+                              <div
+                                style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                              >
+                                ]
+                              </div>
+                            </li>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"uri\": \"string\",\n  \"cid\": \"string\",\n  \"cursor\": \"string\",\n  \"repostedBy\": [\n    {\n      \"did\": \"string\",\n      \"handle\": \"string\",\n      \"displayName\": \"string\",\n      \"description\": \"string\",\n      \"avatar\": \"string\",\n      \"associated\": {\n        \"lists\": 0,\n        \"feedgens\": 0,\n        \"starterPacks\": 0,\n        \"labeler\": true,\n        \"chat\": {\n          \"allowIncoming\": \"all\"\n        }\n      },\n      \"indexedAt\": \"2024-11-22T07:18:13.670Z\",\n      \"createdAt\": \"2024-11-22T07:18:13.670Z\",\n      \"viewer\": {\n        \"muted\": true,\n        \"mutedByList\": {\n          \"uri\": \"string\",\n          \"cid\": \"string\",\n          \"name\": \"string\",\n          \"purpose\": \"string\",\n          \"avatar\": \"string\",\n          \"listItemCount\": 0,\n          \"labels\": [\n            {\n              \"ver\": 0,\n              \"src\": \"string\",\n              \"uri\": \"string\",\n              \"cid\": \"string\",\n              \"val\": \"string\",\n              \"neg\": true,\n              \"cts\": \"2024-11-22T07:18:13.670Z\",\n              \"exp\": \"2024-11-22T07:18:13.670Z\",\n              \"sig\": \"string\"\n            }\n          ],\n          \"viewer\": {\n            \"muted\": true,\n            \"blocked\": \"string\"\n          },\n          \"indexedAt\": \"2024-11-22T07:18:13.670Z\"\n        },\n        \"blockedBy\": true,\n        \"blocking\": \"string\",\n        \"blockingByList\": {\n          \"uri\": \"string\",\n          \"cid\": \"string\",\n          \"name\": \"string\",\n          \"purpose\": \"string\",\n          \"avatar\": \"string\",\n          \"listItemCount\": 0,\n          \"labels\": [\n            {\n              \"ver\": 0,\n              \"src\": \"string\",\n              \"uri\": \"string\",\n              \"cid\": \"string\",\n              \"val\": \"string\",\n              \"neg\": true,\n              \"cts\": \"2024-11-22T07:18:13.670Z\",\n              \"exp\": \"2024-11-22T07:18:13.670Z\",\n              \"sig\": \"string\"\n            }\n          ],\n          \"viewer\": {\n            \"muted\": true,\n            \"blocked\": \"string\"\n          },\n          \"indexedAt\": \"2024-11-22T07:18:13.670Z\"\n        },\n        \"following\": \"string\",\n        \"followedBy\": \"string\",\n        \"knownFollowers\": {\n          \"count\": 0,\n          \"followers\": [\n            {\n              \"did\": \"string\",\n              \"handle\": \"string\",\n              \"displayName\": \"string\",\n              \"avatar\": \"string\",\n              \"associated\": {\n                \"lists\": 0,\n                \"feedgens\": 0,\n                \"starterPacks\": 0,\n                \"labeler\": true,\n                \"chat\": {\n                  \"allowIncoming\": \"all\"\n                }\n              },\n              \"labels\": [\n                {\n                  \"ver\": 0,\n                  \"src\": \"string\",\n                  \"uri\": \"string\",\n                  \"cid\": \"string\",\n                  \"val\": \"string\",\n                  \"neg\": true,\n                  \"cts\": \"2024-11-22T07:18:13.671Z\",\n                  \"exp\": \"2024-11-22T07:18:13.671Z\",\n                  \"sig\": \"string\"\n                }\n              ],\n              \"createdAt\": \"2024-11-22T07:18:13.671Z\"\n            }\n          ]\n        }\n      },\n      \"labels\": [\n        {\n          \"ver\": 0,\n          \"src\": \"string\",\n          \"uri\": \"string\",\n          \"cid\": \"string\",\n          \"val\": \"string\",\n          \"neg\": true,\n          \"cts\": \"2024-11-22T07:18:13.671Z\",\n          \"exp\": \"2024-11-22T07:18:13.671Z\",\n          \"sig\": \"string\"\n        }\n      ]\n    }\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Bad Request
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"error"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** [`InvalidRequest`, `ExpiredToken`, `InvalidToken`]"}
+                        schema={{"type":"string","enum":["InvalidRequest","ExpiredToken","InvalidToken"]}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"error\": \"InvalidRequest\",\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          Unauthorized
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"error"}
+                        required={true}
+                        schemaName={""}
+                        qualifierMessage={undefined}
+                        schema={{"const":"AuthMissing"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"message"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"message\": \"string\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
