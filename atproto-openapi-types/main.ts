@@ -101,7 +101,10 @@ for await (const entry of entries) {
           }
           // @ts-ignore FIXME: Also confused about ArraySchemaObject
           // paths[`/xrpc/${id}`] = { get };
-          if (!id.startsWith("app.bsky.feed") || id.startsWith("app.bsky.feed.describeFeedGenerator")) {
+          if (!id.startsWith("app.bsky.feed")
+              || id.startsWith("app.bsky.feed.describeFeedGenerator")
+              || id.startsWith("app.bsky.feed.getActorFeeds")
+          ) {
             // @ts-ignore FIXME: Also confused about ArraySchemaObject
             paths[`/xrpc/${id}`] = { get };
           }

@@ -1,11 +1,11 @@
 ---
-id: app-bsky-graph-get-lists
-title: "app.bsky.graph.getLists"
+id: app-bsky-feed-get-actor-feeds
+title: "app.bsky.feed.getActorFeeds"
 description: "*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*"
-sidebar_label: "app.bsky.graph.getLists"
+sidebar_label: "app.bsky.feed.getActorFeeds"
 hide_title: true
 hide_table_of_contents: true
-api: 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
+api: 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
 sidebar_class_name: "get api-method"
 info_path: docs/api/at-protocol-xrpc-api
 custom_edit_url: null
@@ -25,12 +25,12 @@ import TabItem from "@theme/TabItem";
 <h1
   className={"openapi__heading"}
 >
-  app.bsky.graph.getLists
+  app.bsky.feed.getActorFeeds
 </h1>
 
 <MethodEndpoint
   method={"get"}
-  path={"/xrpc/app.bsky.graph.getLists"}
+  path={"/xrpc/app.bsky.feed.getActorFeeds"}
 >
   
 </MethodEndpoint>
@@ -41,7 +41,7 @@ import TabItem from "@theme/TabItem";
 
 *To learn more about calling atproto API endpoints like this one, see the [API Hosts and Auth](/docs/advanced-guides/api-directory) guide.*
 
-Enumerates the lists created by a specified account (actor).
+Get a list of feeds (feed generator records) created by the actor (in the actor's repo).
 
 ## Request
 
@@ -63,7 +63,7 @@ Enumerates the lists created by a specified account (actor).
     <ul>
       <ParamsItem
         className={"paramsItem"}
-        param={{"name":"actor","in":"query","description":"The account (actor) to enumerate lists from.","required":true,"schema":{"type":"string","description":"The account (actor) to enumerate lists from.","format":"at-identifier"}}}
+        param={{"name":"actor","in":"query","required":true,"schema":{"type":"string","format":"at-identifier"}}}
       >
         
       </ParamsItem><ParamsItem
@@ -154,7 +154,7 @@ Enumerates the lists created by a specified account (actor).
                               <strong
                                 className={"openapi-schema__property"}
                               >
-                                lists
+                                feeds
                               </strong><span
                                 className={"openapi-schema__name"}
                               >
@@ -194,6 +194,15 @@ Enumerates the lists created by a specified account (actor).
                               schemaName={"cid"}
                               qualifierMessage={undefined}
                               schema={{"type":"string","format":"cid"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"did"}
+                              required={true}
+                              schemaName={"did"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","format":"did"}}
                             >
                               
                             </SchemaItem><SchemaItem
@@ -1657,88 +1666,13 @@ Enumerates the lists created by a specified account (actor).
                               </details>
                             </SchemaItem><SchemaItem
                               collapsible={false}
-                              name={"name"}
+                              name={"displayName"}
                               required={true}
                               schemaName={"string"}
-                              qualifierMessage={"**Possible values:** `non-empty` and `<= 64 characters`"}
-                              schema={{"type":"string","minLength":1,"maxLength":64}}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
                             >
                               
-                            </SchemaItem><SchemaItem
-                              collapsible={true}
-                              className={"schemaItem"}
-                            >
-                              <details
-                                style={{}}
-                                className={"openapi-markdown__details"}
-                              >
-                                <summary
-                                  style={{}}
-                                >
-                                  <strong>
-                                    purpose
-                                  </strong><span
-                                    style={{"opacity":"0.6"}}
-                                  >
-                                     object
-                                  </span><strong
-                                    style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}
-                                  >
-                                     required
-                                  </strong>
-                                </summary><div
-                                  style={{"marginLeft":"1rem"}}
-                                >
-                                  
-                                </div><div>
-                                  <span
-                                    className={"badge badge--info"}
-                                  >
-                                    oneOf
-                                  </span><SchemaTabs>
-                                    <TabItem
-                                      label={"app.bsky.graph.defs.modlist"}
-                                      value={"0-item-properties"}
-                                    >
-                                      <div
-                                        style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
-                                      >
-                                        
-                                        
-                                        string
-                                        
-                                        
-                                      </div>
-                                    </TabItem><TabItem
-                                      label={"app.bsky.graph.defs.curatelist"}
-                                      value={"1-item-properties"}
-                                    >
-                                      <div
-                                        style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
-                                      >
-                                        
-                                        
-                                        string
-                                        
-                                        
-                                      </div>
-                                    </TabItem><TabItem
-                                      label={"app.bsky.graph.defs.referencelist"}
-                                      value={"2-item-properties"}
-                                    >
-                                      <div
-                                        style={{"marginTop":".5rem","marginBottom":".5rem","marginLeft":"1rem"}}
-                                      >
-                                        
-                                        
-                                        string
-                                        
-                                        
-                                      </div>
-                                    </TabItem>
-                                  </SchemaTabs>
-                                </div>
-                              </details>
                             </SchemaItem><SchemaItem
                               collapsible={false}
                               name={"description"}
@@ -1965,11 +1899,20 @@ Enumerates the lists created by a specified account (actor).
                               
                             </SchemaItem><SchemaItem
                               collapsible={false}
-                              name={"listItemCount"}
+                              name={"likeCount"}
                               required={false}
                               schemaName={"integer"}
                               qualifierMessage={undefined}
                               schema={{"type":"integer","minimum":0}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"acceptsInteractions"}
+                              required={false}
+                              schemaName={"boolean"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"boolean"}}
                             >
                               
                             </SchemaItem><SchemaItem
@@ -2124,16 +2067,7 @@ Enumerates the lists created by a specified account (actor).
                                 >
                                   <SchemaItem
                                     collapsible={false}
-                                    name={"muted"}
-                                    required={false}
-                                    schemaName={"boolean"}
-                                    qualifierMessage={undefined}
-                                    schema={{"type":"boolean"}}
-                                  >
-                                    
-                                  </SchemaItem><SchemaItem
-                                    collapsible={false}
-                                    name={"blocked"}
+                                    name={"like"}
                                     required={false}
                                     schemaName={"at-uri"}
                                     qualifierMessage={undefined}
@@ -2169,7 +2103,7 @@ Enumerates the lists created by a specified account (actor).
                   value={"Example (from schema)"}
                 >
                   <ResponseSamples
-                    responseExample={"{\n  \"cursor\": \"string\",\n  \"lists\": [\n    {\n      \"uri\": \"string\",\n      \"cid\": \"string\",\n      \"creator\": {\n        \"did\": \"string\",\n        \"handle\": \"string\",\n        \"displayName\": \"string\",\n        \"description\": \"string\",\n        \"avatar\": \"string\",\n        \"associated\": {\n          \"lists\": 0,\n          \"feedgens\": 0,\n          \"starterPacks\": 0,\n          \"labeler\": true,\n          \"chat\": {\n            \"allowIncoming\": \"all\"\n          }\n        },\n        \"indexedAt\": \"2024-11-22T03:33:56.699Z\",\n        \"createdAt\": \"2024-11-22T03:33:56.699Z\",\n        \"viewer\": {\n          \"muted\": true,\n          \"mutedByList\": {\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"name\": \"string\",\n            \"purpose\": \"string\",\n            \"avatar\": \"string\",\n            \"listItemCount\": 0,\n            \"labels\": [\n              {\n                \"ver\": 0,\n                \"src\": \"string\",\n                \"uri\": \"string\",\n                \"cid\": \"string\",\n                \"val\": \"string\",\n                \"neg\": true,\n                \"cts\": \"2024-11-22T03:33:56.699Z\",\n                \"exp\": \"2024-11-22T03:33:56.699Z\",\n                \"sig\": \"string\"\n              }\n            ],\n            \"viewer\": {\n              \"muted\": true,\n              \"blocked\": \"string\"\n            },\n            \"indexedAt\": \"2024-11-22T03:33:56.699Z\"\n          },\n          \"blockedBy\": true,\n          \"blocking\": \"string\",\n          \"blockingByList\": {\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"name\": \"string\",\n            \"purpose\": \"string\",\n            \"avatar\": \"string\",\n            \"listItemCount\": 0,\n            \"labels\": [\n              {\n                \"ver\": 0,\n                \"src\": \"string\",\n                \"uri\": \"string\",\n                \"cid\": \"string\",\n                \"val\": \"string\",\n                \"neg\": true,\n                \"cts\": \"2024-11-22T03:33:56.699Z\",\n                \"exp\": \"2024-11-22T03:33:56.699Z\",\n                \"sig\": \"string\"\n              }\n            ],\n            \"viewer\": {\n              \"muted\": true,\n              \"blocked\": \"string\"\n            },\n            \"indexedAt\": \"2024-11-22T03:33:56.699Z\"\n          },\n          \"following\": \"string\",\n          \"followedBy\": \"string\",\n          \"knownFollowers\": {\n            \"count\": 0,\n            \"followers\": [\n              {\n                \"did\": \"string\",\n                \"handle\": \"string\",\n                \"displayName\": \"string\",\n                \"avatar\": \"string\",\n                \"associated\": {\n                  \"lists\": 0,\n                  \"feedgens\": 0,\n                  \"starterPacks\": 0,\n                  \"labeler\": true,\n                  \"chat\": {\n                    \"allowIncoming\": \"all\"\n                  }\n                },\n                \"labels\": [\n                  {\n                    \"ver\": 0,\n                    \"src\": \"string\",\n                    \"uri\": \"string\",\n                    \"cid\": \"string\",\n                    \"val\": \"string\",\n                    \"neg\": true,\n                    \"cts\": \"2024-11-22T03:33:56.699Z\",\n                    \"exp\": \"2024-11-22T03:33:56.699Z\",\n                    \"sig\": \"string\"\n                  }\n                ],\n                \"createdAt\": \"2024-11-22T03:33:56.699Z\"\n              }\n            ]\n          }\n        },\n        \"labels\": [\n          {\n            \"ver\": 0,\n            \"src\": \"string\",\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"val\": \"string\",\n            \"neg\": true,\n            \"cts\": \"2024-11-22T03:33:56.699Z\",\n            \"exp\": \"2024-11-22T03:33:56.699Z\",\n            \"sig\": \"string\"\n          }\n        ]\n      },\n      \"name\": \"string\",\n      \"purpose\": \"string\",\n      \"description\": \"string\",\n      \"descriptionFacets\": [\n        {\n          \"index\": {\n            \"byteStart\": 0,\n            \"byteEnd\": 0\n          },\n          \"features\": [\n            {},\n            {},\n            {}\n          ]\n        }\n      ],\n      \"avatar\": \"string\",\n      \"listItemCount\": 0,\n      \"labels\": [\n        {\n          \"ver\": 0,\n          \"src\": \"string\",\n          \"uri\": \"string\",\n          \"cid\": \"string\",\n          \"val\": \"string\",\n          \"neg\": true,\n          \"cts\": \"2024-11-22T03:33:56.699Z\",\n          \"exp\": \"2024-11-22T03:33:56.699Z\",\n          \"sig\": \"string\"\n        }\n      ],\n      \"viewer\": {\n        \"muted\": true,\n        \"blocked\": \"string\"\n      },\n      \"indexedAt\": \"2024-11-22T03:33:56.699Z\"\n    }\n  ]\n}"}
+                    responseExample={"{\n  \"cursor\": \"string\",\n  \"feeds\": [\n    {\n      \"uri\": \"string\",\n      \"cid\": \"string\",\n      \"did\": \"string\",\n      \"creator\": {\n        \"did\": \"string\",\n        \"handle\": \"string\",\n        \"displayName\": \"string\",\n        \"description\": \"string\",\n        \"avatar\": \"string\",\n        \"associated\": {\n          \"lists\": 0,\n          \"feedgens\": 0,\n          \"starterPacks\": 0,\n          \"labeler\": true,\n          \"chat\": {\n            \"allowIncoming\": \"all\"\n          }\n        },\n        \"indexedAt\": \"2024-11-22T03:33:56.640Z\",\n        \"createdAt\": \"2024-11-22T03:33:56.640Z\",\n        \"viewer\": {\n          \"muted\": true,\n          \"mutedByList\": {\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"name\": \"string\",\n            \"purpose\": \"string\",\n            \"avatar\": \"string\",\n            \"listItemCount\": 0,\n            \"labels\": [\n              {\n                \"ver\": 0,\n                \"src\": \"string\",\n                \"uri\": \"string\",\n                \"cid\": \"string\",\n                \"val\": \"string\",\n                \"neg\": true,\n                \"cts\": \"2024-11-22T03:33:56.640Z\",\n                \"exp\": \"2024-11-22T03:33:56.640Z\",\n                \"sig\": \"string\"\n              }\n            ],\n            \"viewer\": {\n              \"muted\": true,\n              \"blocked\": \"string\"\n            },\n            \"indexedAt\": \"2024-11-22T03:33:56.640Z\"\n          },\n          \"blockedBy\": true,\n          \"blocking\": \"string\",\n          \"blockingByList\": {\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"name\": \"string\",\n            \"purpose\": \"string\",\n            \"avatar\": \"string\",\n            \"listItemCount\": 0,\n            \"labels\": [\n              {\n                \"ver\": 0,\n                \"src\": \"string\",\n                \"uri\": \"string\",\n                \"cid\": \"string\",\n                \"val\": \"string\",\n                \"neg\": true,\n                \"cts\": \"2024-11-22T03:33:56.640Z\",\n                \"exp\": \"2024-11-22T03:33:56.640Z\",\n                \"sig\": \"string\"\n              }\n            ],\n            \"viewer\": {\n              \"muted\": true,\n              \"blocked\": \"string\"\n            },\n            \"indexedAt\": \"2024-11-22T03:33:56.640Z\"\n          },\n          \"following\": \"string\",\n          \"followedBy\": \"string\",\n          \"knownFollowers\": {\n            \"count\": 0,\n            \"followers\": [\n              {\n                \"did\": \"string\",\n                \"handle\": \"string\",\n                \"displayName\": \"string\",\n                \"avatar\": \"string\",\n                \"associated\": {\n                  \"lists\": 0,\n                  \"feedgens\": 0,\n                  \"starterPacks\": 0,\n                  \"labeler\": true,\n                  \"chat\": {\n                    \"allowIncoming\": \"all\"\n                  }\n                },\n                \"labels\": [\n                  {\n                    \"ver\": 0,\n                    \"src\": \"string\",\n                    \"uri\": \"string\",\n                    \"cid\": \"string\",\n                    \"val\": \"string\",\n                    \"neg\": true,\n                    \"cts\": \"2024-11-22T03:33:56.640Z\",\n                    \"exp\": \"2024-11-22T03:33:56.640Z\",\n                    \"sig\": \"string\"\n                  }\n                ],\n                \"createdAt\": \"2024-11-22T03:33:56.640Z\"\n              }\n            ]\n          }\n        },\n        \"labels\": [\n          {\n            \"ver\": 0,\n            \"src\": \"string\",\n            \"uri\": \"string\",\n            \"cid\": \"string\",\n            \"val\": \"string\",\n            \"neg\": true,\n            \"cts\": \"2024-11-22T03:33:56.640Z\",\n            \"exp\": \"2024-11-22T03:33:56.640Z\",\n            \"sig\": \"string\"\n          }\n        ]\n      },\n      \"displayName\": \"string\",\n      \"description\": \"string\",\n      \"descriptionFacets\": [\n        {\n          \"index\": {\n            \"byteStart\": 0,\n            \"byteEnd\": 0\n          },\n          \"features\": [\n            {},\n            {},\n            {}\n          ]\n        }\n      ],\n      \"avatar\": \"string\",\n      \"likeCount\": 0,\n      \"acceptsInteractions\": true,\n      \"labels\": [\n        {\n          \"ver\": 0,\n          \"src\": \"string\",\n          \"uri\": \"string\",\n          \"cid\": \"string\",\n          \"val\": \"string\",\n          \"neg\": true,\n          \"cts\": \"2024-11-22T03:33:56.640Z\",\n          \"exp\": \"2024-11-22T03:33:56.640Z\",\n          \"sig\": \"string\"\n        }\n      ],\n      \"viewer\": {\n        \"like\": \"string\"\n      },\n      \"indexedAt\": \"2024-11-22T03:33:56.640Z\"\n    }\n  ]\n}"}
                     language={"json"}
                   >
                     
