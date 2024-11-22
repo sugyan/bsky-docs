@@ -68,6 +68,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/bluesky-social/bsky-docs/tree/main/",
           blogSidebarCount: "ALL",
+          onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
