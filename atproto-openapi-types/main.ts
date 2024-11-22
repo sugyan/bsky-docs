@@ -106,7 +106,7 @@ for await (const entry of entries) {
               "app.bsky.feed.getAuthorFeed",
               // "app.bsky.feed.getFeed",
               // "app.bsky.feed.getListFeed",
-              "app.bsky.feed.getTimeline",
+              // "app.bsky.feed.getTimeline",
             ].includes(id)
           ) {
             // @ts-ignore FIXME: Also confused about ArraySchemaObject
