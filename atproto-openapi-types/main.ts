@@ -105,7 +105,7 @@ for await (const entry of entries) {
               // "app.bsky.feed.getActorLikes",
               "app.bsky.feed.getAuthorFeed",
               // "app.bsky.feed.getFeed",
-              "app.bsky.feed.getListFeed",
+              // "app.bsky.feed.getListFeed",
               "app.bsky.feed.getTimeline",
             ].includes(id)
           ) {
