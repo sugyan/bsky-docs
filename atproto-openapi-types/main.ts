@@ -100,7 +100,11 @@ for await (const entry of entries) {
             }
           }
           // @ts-ignore FIXME: Also confused about ArraySchemaObject
-          paths[`/xrpc/${id}`] = { get };
+          // paths[`/xrpc/${id}`] = { get };
+          if (!id.startsWith("app.bsky.feed")) {
+            // @ts-ignore FIXME: Also confused about ArraySchemaObject
+            paths[`/xrpc/${id}`] = { get };
+          }
         }
         break;
       }
