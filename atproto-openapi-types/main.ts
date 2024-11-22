@@ -100,18 +100,7 @@ for await (const entry of entries) {
             }
           }
           // @ts-ignore FIXME: Also confused about ArraySchemaObject
-          // paths[`/xrpc/${id}`] = { get };
-          if (![
-              // "app.bsky.feed.getActorLikes",
-              "app.bsky.feed.getAuthorFeed",
-              // "app.bsky.feed.getFeed",
-              // "app.bsky.feed.getListFeed",
-              // "app.bsky.feed.getTimeline",
-            ].includes(id)
-          ) {
-            // @ts-ignore FIXME: Also confused about ArraySchemaObject
-            paths[`/xrpc/${id}`] = { get };
-          }
+          paths[`/xrpc/${id}`] = { get };
         }
         break;
       }
