@@ -104,6 +104,7 @@ for await (const entry of entries) {
           if (!id.startsWith("app.bsky.feed")
               || id.startsWith("app.bsky.feed.describeFeedGenerator")
               || id.startsWith("app.bsky.feed.getActorFeeds")
+              || id.startsWith("app.bsky.feed.getActorLikes")
           ) {
             // @ts-ignore FIXME: Also confused about ArraySchemaObject
             paths[`/xrpc/${id}`] = { get };
