@@ -918,13 +918,13 @@
         }
       }
     },
-    "/xrpc/app.bsky.feed.getActorLikes": {
+    "/xrpc/app.bsky.feed.getFeedGenerator": {
       "get": {
         "tags": [
           "app.bsky.feed"
         ],
-        "description": "*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*\n\n*To learn more about calling atproto API endpoints like this one, see the [API Hosts and Auth](/docs/advanced-guides/api-directory) guide.*\n\nGet a list of posts liked by an actor. Requires auth, actor must be the requesting account.",
-        "operationId": "app.bsky.feed.getActorLikes",
+        "description": "*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*\n\n*To learn more about calling atproto API endpoints like this one, see the [API Hosts and Auth](/docs/advanced-guides/api-directory) guide.*\n\nGet information about a feed generator. Implemented by AppView.",
+        "operationId": "app.bsky.feed.getFeedGenerator",
         "security": [
           {
             "Bearer": []
@@ -932,31 +932,14 @@
         ],
         "parameters": [
           {
-            "name": "actor",
+            "name": "feed",
             "in": "query",
+            "description": "AT-URI of the feed generator record.",
             "required": true,
             "schema": {
               "type": "string",
-              "format": "at-identifier"
-            }
-          },
-          {
-            "name": "limit",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "minimum": 1,
-              "maximum": 100,
-              "default": 50
-            }
-          },
-          {
-            "name": "cursor",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string"
+              "description": "AT-URI of the feed generator record.",
+              "format": "at-uri"
             }
           }
         ],
@@ -968,16 +951,120 @@
                 "schema": {
                   "type": "object",
                   "required": [
-                    "feed"
+                    "view",
+                    "isOnline",
+                    "isValid"
                   ],
                   "properties": {
-                    "cursor": {
-                      "type": "string"
+                    "view": {
+                      "$ref": "#/components/schemas/app.bsky.feed.defs.generatorView"
                     },
-                    "feed": {
+                    "isOnline": {
+                      "type": "boolean",
+                      "description": "Indicates whether the feed generator service has been online recently, or else seems to be inactive."
+                    },
+                    "isValid": {
+                      "type": "boolean",
+                      "description": "Indicates whether the feed generator service is compatible with the record declaration."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error",
+                    "message"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "enum": [
+                        "InvalidRequest",
+                        "ExpiredToken",
+                        "InvalidToken"
+                      ]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error",
+                    "message"
+                  ],
+                  "properties": {
+                    "error": {
+                      "const": "AuthMissing"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/xrpc/app.bsky.feed.getFeedGenerators": {
+      "get": {
+        "tags": [
+          "app.bsky.feed"
+        ],
+        "description": "*This endpoint is part of the Bluesky application Lexicon APIs (`app.bsky.*`). Public endpoints which don't require authentication can be made directly against the public Bluesky AppView API: https://public.api.bsky.app. Authenticated requests are usually made to the user's PDS, with automatic service proxying. Authenticated requests can be used for both public and non-public endpoints.*\n\n*To learn more about calling atproto API endpoints like this one, see the [API Hosts and Auth](/docs/advanced-guides/api-directory) guide.*\n\nGet information about a list of feed generators.",
+        "operationId": "app.bsky.feed.getFeedGenerators",
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "feeds",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "at-uri"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "feeds"
+                  ],
+                  "properties": {
+                    "feeds": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/components/schemas/app.bsky.feed.defs.feedViewPost"
+                        "$ref": "#/components/schemas/app.bsky.feed.defs.generatorView"
                       }
                     }
                   }
@@ -1001,9 +1088,7 @@
                       "enum": [
                         "InvalidRequest",
                         "ExpiredToken",
-                        "InvalidToken",
-                        "BlockedActor",
-                        "BlockedByActor"
+                        "InvalidToken"
                       ]
                     },
                     "message": {
